@@ -37,3 +37,16 @@ const personajesSimpsons = [
       });
       
       console.log(personajesModificados);
+
+      const masPersonajesSimpsons = [
+        { nombre: "Moe", edad: 43, rol: "Cantinero" },
+        { nombre: "Barney", edad: 40, rol: "Alcoholico" },
+        { nombre: "Sr. Burns", edad: 72, rol: "Jefe" },
+        { nombre: "Lenny", edad: 36, rol: "Compañero trabajo" },
+        { nombre: "Carl", edad: 36, rol: "Compañero trabajo" },
+        { nombre: "Krusty", edad: 45, rol: "Payaso" },
+        ];
+        
+        let totalPersonajes = [...personajesSimpsons, ...masPersonajesSimpsons];
+        
+        console.log(totalPersonajes);
