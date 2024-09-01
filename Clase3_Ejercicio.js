@@ -21,7 +21,19 @@ const personajesSimpsons = [
     let sumaEdades = personajesSimpsons.reduce((acumulador, personaje) => acumulador + personaje.edad, 0);
 
     console.log(sumaEdades);
-    
+
     let nombres = personajesSimpsons.map(personaje => personaje.nombre);
 
     console.log(nombres);
+
+    let personajesModificados = personajesSimpsons.map(personaje => {
+        let { nombre, edad, rol } = personaje;
+        
+        if (edad < 18) {
+          rol = "Estudiante";
+        }
+        
+        return { nombre, edad, rol };
+      });
+      
+      console.log(personajesModificados);
